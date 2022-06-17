@@ -1,0 +1,15 @@
+<h1 *ngIf="success">Completed Books</h1>
+<div *ngIf="success" class="container">
+    <div *ngFor="let ele of completedElements" class="row rowElement">
+        <div  class="col-4 book text-center">
+            <p>Title:{{ele.title}}</p>
+            <p>Author:{{ele.author}}</p>
+            <p>Language:{{ele.language}}</p>
+            <p>Pages:{{ele.pages}}</p>
+            <p>Year:{{ele.year}}</p>
+            <p>Country:{{ele.country}}</p>
+        </div> 
+    </div>
+</div>
+<h1 *ngIf="!success">Login to see your Completed Books</h1>
+

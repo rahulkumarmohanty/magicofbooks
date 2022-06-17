@@ -1,0 +1,25 @@
+
+
+.book{
+    width: 200px;
+    height:350px; 
+    border-radius: 15px;
+    border-color: black;
+    border-style: solid;
+
+}
+img{
+    padding:20px;
+}
+.rowElement{
+    padding:40px;
+    
+}
+h1{
+    color: orangered;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: justify;
+}
+p{
+    color: orangered;
+}

@@ -1,0 +1,22 @@
+.book{
+    width: 200px;;
+    height:350px;  
+    border-radius: 5px;
+    border-color: blueviolet;
+    border-style: solid;
+}
+img{
+    padding:30px;
+}
+.rowElement{
+    padding:40px;
+    
+}
+h1{
+    color:darkmagenta;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+p{
+    color:crimson;
+    font-size: medium;
+}

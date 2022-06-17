@@ -1,0 +1,24 @@
+
+.book{
+    width:100%;
+    height:450px; 
+    border-radius: 15px;
+    border-color: black;
+    border-style: solid;
+
+}
+img{
+    padding:20px;
+}
+.rowElement{
+    padding:40px;
+    
+}
+h1{
+    color: green;
+    font-family:sans-serif ;
+    text-align: left;
+}
+p{
+    color:green;
+}

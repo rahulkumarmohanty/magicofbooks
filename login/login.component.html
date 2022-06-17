@@ -1,0 +1,80 @@
+
+<section class="vh-100">
+  <div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-9 col-lg-6 col-xl-5">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+          class="img-fluid" alt="Sample image">
+      </div>
+      <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+        <form #userform="ngForm" (ngSubmit)="login()">
+
+          <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+
+            <!-- Email input -->
+            <div class="d-flex flex-row align-items-right mb-4">
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form3Example3">Username</label>
+                <input type="text" id="form3Example3" class="form-control form-control-lg" name="username" required #usernameControl="ngModel" [(ngModel)]="username"
+                  placeholder="Enter a valid username" />
+                <p *ngIf="usernameControl.touched && usernameControl.invalid">Username required</p>
+                <br>
+              </div>
+            </div>
+            <br>
+            <!-- Password input -->
+            <div class="d-flex flex-row align-items-right mb-4 ml-3">
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form3Example4">Password</label>
+                <input type="password" id="form3Example4" name="password" autocomplete="on" required #passwordControl="ngModel" [(ngModel)]="password" class="form-control form-control-lg"
+                  placeholder="Enter password" />
+                <p *ngIf="passwordControl.touched && passwordControl.invalid">Password required</p>
+                <br>
+              </div>
+            </div>
+            <br>
+            <p *ngIf="userform.valid && !success && onclick">Enter the correct credentials</p>
+            <br>
+            <div class="text-right align-items-right text-lg-start mt-0 ml-4 mb-0">
+              <button type="submit" class="btn btn-primary btn-lg mt-2"
+                style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+              <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#D:\myapp\src\app\register\register.component.html"
+                  class="link-danger">Register</a></p>
+            </div>
+            <br>
+  
+          </div>  
+        </form>
+        <br>
+        <h1 *ngIf="success">Already LoggedIn</h1>
+          
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
+    <!-- Copyright -->
+    <div class="text-white mb-3 mb-md-0">
+      Copyright © 2020. All rights reserved.
+    </div>
+    <!-- Copyright -->
+
+    <!-- Right -->
+    <div>
+      <a href="#!" class="text-white me-4">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#!" class="text-white me-4">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#!" class="text-white me-4">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="#!" class="text-white">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </div>
+</section>
